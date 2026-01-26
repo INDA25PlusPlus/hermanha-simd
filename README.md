@@ -56,7 +56,7 @@ Benchmarking was performed using Criterion.
 | Scalar        | ~1.85 s   |
 | SIMD          | ~0.45 s   |
 
-This corresponds to a speedup of approximately **4.1×**.
+This is to a speedup of approximately 4.1×, which is kind of reasonable i guess. Caculating 4 times as many pixels at the time, should correspond to a speedup of about 4 times. What makes me a bit confused is that it's more than 4. I dont know what happens in the background and what optimizations could cause this, or if it's just a coincidence of other factors. But I'll take it.
 
 
 
@@ -71,4 +71,4 @@ https://hallalay.github.io/
 
 ## Conclusion
 
-By using SIMD to compute 4 pixels at the same time we manage to speed up the mandelbrot rendering to approcimatly 4 times the original speed, of a scalar application.
+By using SIMD to compute 4 pixels at the same time we manage to speed up the mandelbrot rendering to approcimatly 4 times the original speed of a scalar application.
